@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+.head{
+    width:86vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.switch{
+    cursor: pointer;
+    font-size: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 19px;
+    margin-right: 10px;
+    border-radius: 5px;;
+    background-color: gray;
+    color: white;
+}
+.switch:hover{
+    background-color: #222;
+    color: white;
+}
+span{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span img{
+    height:100%;
+}
+section{
+    overflow-x: auto;
+}
+section::-webkit-scrollbar{
+    visibility: hidden;
+}
+.box{
+    padding-top: 4vh;;
+    height:80vh;
+    width:90vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    overflow: hidden;
+    display: none;
+    transition: 1s;
+}
+
+hr{
+    color:#9E9E9E;
+}
+.card1 , .card2 , .card3{
+    box-shadow: 6px 7px 14px 0px rgba(219,219,219,0.75);
+    width:25vw;
+    height:70vh;
+    border-radius: 10px;
+    margin-right:4vw;
+}
+
+.box img{
+    border-radius:10px;
+    height:46%;
+    width:100%;
+}
+.heading{
+    margin-top:-3vh;
+    position: relative;
+    width:25vw;
+    height:10vh;
+    background: -webkit-linear-gradient(left, #4e77e8 15%,#2758ea 60%);
+}
+ .heading{
+    color:white;
+    font-size: 24px;;
+}
+.box h2{
+    padding: 4vh 2vw;
+    font-size: 22px;
+}
+.box h6{
+    margin-left: -10vw;;
+    font-size: 16px;
+    color:#9E9E9E;
+}
+.para{
+    margin-top: -4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0vh 2vw;
+    font-size: 16px;
+    color:#9E9E9E;
+    font-weight: bold;
+}
+.card{
+    transition: 0.8s;
+}
+.card:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="head">
+                <span>
+                    <img src="images/live.png" >
+                    <h2>Upcoming Live Coaching</h2>
+                </span>
+                <p class="btn">
+                    <span class="switch left" onclick="controller(-1)">&#139;</span>
+                    <span class="switch right" onclick="controller(1)">&#155;</span>
+                </p>
+            </div>
+            <section>
+                        <div class="box">
+                            <div class="card card2">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png"style="height:42% ; width:8%; margin-right: 20px;"> Starts in 15 Days</span>
+                                <h2>Civil Junior Engineer Live Coaching Batch 2</h2>
+                                <hr>
+                                <span> <h6>200+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>5000+ Questions</p></span>
+                                    <span><p>80+ Notes</p></span>
+                                </div>
+                            </div>
+                            <div class="card card3">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png"style="height:42% ; width:8%; margin-right: 20px;"> Batch closes in 2 days</span>
+                                <h2>UPSC CDS - 2 2021 Live Coaching Batch 3</h2>
+                                <hr>
+                                <span><h6>220+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>6000+ Questions</p></span>
+                                    <span><p>100+ Notes</p></span>
+                                </div>
+                            </div>
+                            <div class="card card1">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png" style="height:42% ; width:8%; margin-right: 20px;"> 5 days left to enroll</span>
+                                <h2>IBPS PO & SBI PO Live Coaching in English Ba...</h2>
+                                <hr>
+                                <span><h6>240+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>9000+ Questions</p></span>
+                                    <span><p>120+ Notes</p></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box other">
+                            <div class="card card1">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png" style="height:42% ; width:8%; margin-right: 20px;"> 5 days left to enroll</span>
+                                <h2>IBPS PO & SBI PO Live Coaching in English Ba...</h2>
+                                <hr>
+                                <span><h6>240+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>9000+ Questions</p></span>
+                                    <span><p>120+ Notes</p></span>
+                                </div>
+                            </div>
+                            <div class="card card2">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png"style="height:42% ; width:8%; margin-right: 20px;"> Starts in 15 Days</span>
+                                <h2>Civil Junior Engineer Live Coaching Batch 2</h2>
+                                <hr>
+                                <span> <h6>200+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>5000+ Questions</p></span>
+                                    <span><p>80+ Notes</p></span>
+                                </div>
+                            </div>
+                            <div class="card card3">
+                                <img src="images/unnamed.png">
+                                <span class="heading"> <img src="images/clock.png"style="height:42% ; width:8%; margin-right: 20px;"> Batch closes in 2 days</span>
+                                <h2>UPSC CDS - 2 2021 Live Coaching Batch 3</h2>
+                                <hr>
+                                <span><h6>220+ Live Classes </h6> </span>
+                                <div class="para">
+                                    <span><p>6000+ Questions</p></span>
+                                    <span><p>100+ Notes</p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <script>
+           let flag = 0;
+            slideshow(flag);
+            function slideshow(num){
+                let box = document.getElementsByClassName("box");
+
+                if (num==box.length){
+                    flag=0;
+                    num=0;
+                }
+
+                if (num<0){
+                    flag = box.length-1;
+                    num = box.length-1;
+                }
+                
+                for (let y of box){
+                    y.style.display = "none" ;
+                }
+                box[num].style.display="flex";
+            }
+            function controller(x){
+                flag = flag + x;
+                slideshow(flag);
+            }
+        </script>
+    </body>
+</html>
